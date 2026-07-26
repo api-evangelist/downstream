@@ -1,7 +1,25 @@
 aid: downstream
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/downstream.png
 name: Downstream
-description: Downstream is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'Downstream Impact Inc. was a Seattle-based SaaS platform that helped brands optimize and
+  automate their Amazon advertising, founded in late 2017 by ex-Amazon marketer Connor Folley and
+  ex-AWS engineer Salim Hamed. A Techstars Seattle graduate, Downstream was acquired by Amazon-analytics
+  company Jungle Scout in March 2021 and its capabilities were folded into Jungle Scout''s advertising
+  products. The standalone downstreamimpact.com web application is no longer served (returns 404),
+  though the domain and Google Workspace email infrastructure remain active. Downstream published no
+  public developer API, OpenAPI specification, or first-party SDK; its GitHub organization contains only
+  archived internal tooling and forks. This profile is retained as a network company record.'
 url: https://raw.githubusercontent.com/api-evangelist/downstream/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Amazon Advertising
+- Retail Media
+- Ecommerce
+- Advertising Technology
+- Marketing Analytics
+- SaaS
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/downstream-domain-security.yml
 - type: Website
   url: https://downstreamimpact.com/
+- type: GitHubOrganization
+  url: https://github.com/downstreamimpact
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
